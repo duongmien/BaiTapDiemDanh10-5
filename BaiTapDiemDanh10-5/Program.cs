@@ -6,15 +6,7 @@ namespace BaiTapDiemDanh10_5
 {
     class Program
     {
-        public static void nhapSo()
-        {
-            int[] so_234 = new int[10];
-            for (int i = 0; i <= 10; i++)
-            {
-                Console.WriteLine("Nhap so thu " + (i + 1));
-                so_234[i] = int.Parse(Console.ReadLine());
-            }
-        }
+      
         public static void minMax(int[] st_234)
         {
             int min_234 = st_234[0], max_234 = st_234[0];
@@ -70,7 +62,18 @@ namespace BaiTapDiemDanh10_5
         }
         static void Main(string[] args)
         {
-            
+            int[] so_234 = new int[10];
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine("Nhap so thu " + (i + 1));
+                so_234[i] = int.Parse(Console.ReadLine());
+            }
+            minMax(st_234);
+            Console.WriteLine();
+            sapXep(st_234);
+
+            Console.ReadLine();
+
         }
     }
 }
