@@ -68,9 +68,9 @@ namespace BaiTapDiemDanh10_5
                 Console.WriteLine("Nhap so thu " + (i + 1));
                 so_234[i] = int.Parse(Console.ReadLine());
             }
-            minMax(st_234);
+            minMax(so_234);
             Console.WriteLine();
-            sapXep(st_234);
+            sapXep(so_234);
 
             Console.ReadLine();
 
